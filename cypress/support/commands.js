@@ -24,3 +24,5 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 const faker = require('faker');
+/// <reference types="cypress" />
+import 'cypress-xpath';

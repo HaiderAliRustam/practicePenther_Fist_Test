@@ -38,9 +38,11 @@ describe("First Test Case for Practice Penther" ,()=>
         type(Cypress.env('randomName')); 
         cy.get("#saveBtnText").click();
 
-        cy.get(".col-lg-10 > :nth-child(1) > .col-lg-6 > .form-group > .col-md-8 > .form-control-static").invoke("text").then((values)=>{
-            cy.log(values)
-        })
+        cy.get(".col-lg-10 > :nth-child(1) > .col-lg-6 > .form-group > .col-md-8 > .form-control-static")
+            .invoke("text").then((values)=>
+            {
+              cy.log(values)
+             })
 
         cy.log("haider ali")
         //cy.log(Cypress.env('randomName'));
@@ -87,6 +89,7 @@ describe("First Test Case for Practice Penther" ,()=>
         
 
     })
-   
+    
+    
 
 })

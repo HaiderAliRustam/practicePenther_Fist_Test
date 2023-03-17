@@ -12,6 +12,14 @@ class Rendum{
          const randomEmail = faker.internet.email();
           cy.log(randomEmail);
     }
+    Add ( ) 
+    {
+      const linkText = "Contact Us";
+
+      cy.xpath(`//a[normalize-space()='${linkText}']`).click()
+
+  
+    }
     
 
 

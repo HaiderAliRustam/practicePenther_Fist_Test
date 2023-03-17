@@ -20,6 +20,8 @@ context('Aliasing', () => {
     // @ in front of its name
     cy.get('@firstBtn').click()
 
+    cy.log("rdgfdsafd")
+
     cy.get('@firstBtn')
       .should('have.class', 'btn-success')
       .and('contain', 'Changed')
@@ -28,6 +30,7 @@ context('Aliasing', () => {
   it('.as() - alias a route for later use', () => {
     // Alias the route to wait for its response
     cy.intercept('GET', '**/comments/*').as('getComment')
+    cy.log ("nclneljdjjjdjjdfdu")
 
     // we have code that gets a comment when
     // the button is clicked in scripts.js
