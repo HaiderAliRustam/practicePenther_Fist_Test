@@ -26,3 +26,6 @@
 const faker = require('faker');
 /// <reference types="cypress" />
 import 'cypress-xpath';
+import 'cypress-iframe';
+import React from 'react';
+

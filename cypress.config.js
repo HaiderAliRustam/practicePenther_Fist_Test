@@ -1,9 +1,15 @@
 const { defineConfig } = require("cypress");
 
-watchForFileChanges: false,
+
+
+
+
 
 
 module.exports = defineConfig({
+// chromeWebSecurity: false,
+  watchForFileChanges: false,
+
   e2e: {
     setupNodeEvents(on, config) {
       
@@ -11,5 +17,12 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     
+    
+    
+    
   },
+  
+  
+  
+  
 });
