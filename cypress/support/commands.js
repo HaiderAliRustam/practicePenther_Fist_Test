@@ -24,7 +24,7 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 const faker = require('faker');
-/// <reference types="cypress" />
+    /// <reference types="cypress" />
 import 'cypress-xpath';
 import 'cypress-iframe';
 import React from 'react';
